@@ -59,8 +59,8 @@ function squareOrDouble(n) {
  * Hint: you can use JavaScript's Date() class to make things easier
  *
  * e.g. (if we assume that the date today is September 23 2018):
- *    ageFromBirthDate(19870506) -> 31 (because the birthday already passed)
- *    ageFromBirthDate(19971110) -> 20 (because the birthday hasn't passed yet)
+ *    ageFromBirthDate("19870506") -> 31 (because the birthday already passed)
+ *    ageFromBirthDate("19971110") -> 20 (because the birthday hasn't passed yet)
  */
 function ageFromBirthDate(birthDate) {
   const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365;
