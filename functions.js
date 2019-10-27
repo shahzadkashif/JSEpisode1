@@ -83,7 +83,7 @@ function ageFromBirthDate(birthDate) {
   const day = birthDate.slice(6);
 
   const today = new Date();
-  const dob = new Date(`${month}/${day}/${year}`);
+  const dob = new Date(year, month, day);
 
   return Math.floor((today - dob) / _MS_PER_YEAR);
 }
