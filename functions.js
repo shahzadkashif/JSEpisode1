@@ -6,8 +6,12 @@
  */
 function greet(name) {
   // Your code here
+  if (name === undefined) {
+    console.log("Hello");
+  }
+  console.log(`Hello ${name}`);
 }
-
+//greet("kashif");
 /**
  * isOdd(n):
  * - receives a number n
@@ -15,7 +19,12 @@ function greet(name) {
  */
 function isOdd(n) {
   // Your code here
+  if (n % 2 !== 0) {
+    return true;
+  }
+  return false;
 }
+//console.log(isOdd(9));
 
 /**
  * oddsSmallerThan(n):
@@ -30,6 +39,7 @@ function isOdd(n) {
  */
 function oddsSmallerThan(n) {
   // Your code here
+  //if(n ==)
 }
 
 /**
@@ -44,8 +54,15 @@ function oddsSmallerThan(n) {
  */
 function squareOrDouble(n) {
   // Your code here
+  if (n % 2 !== 0) {
+    return n * n;
+  } else return n * 2;
+  //let a = n * n;
+  //return a;
+  //let a = n * 2;
+  //return a;
 }
-
+console.log(squareOrDouble(9));
 /**
  * ageFromBirthDate(birthDate):
  * - receives a birthDate as a STRING of the form <YYYYMMDD>
@@ -63,10 +80,19 @@ function squareOrDouble(n) {
  *    ageFromBirthDate("19971110") -> 20 (because the birthday hasn't passed yet)
  */
 function ageFromBirthDate(birthDate) {
-  const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365;
-
+  //const _MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365;
+  //let year = birthDate.slice(0, 4);
+  //let month = birthDate.slice(4, 6);
+  //let day = birthDate.slice(6, 8);
+  //let stringdate =
+  // year.toString() + "-" + month.toString() + "-" + day.toString();
+  //var d = new Date(stringdate);
+  //var test = date.now - d.getTime();
+  a = Date.now() - parseInt(birthDate).getTime())/( _MS_PER_YEAR)
+  return a;
   // Your code here
 }
+ageFromBirthDate(console.log(19870506));
 
 module.exports = {
   greet,
